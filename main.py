@@ -64,14 +64,14 @@ if abs(diff_percentage) > 2:
        client = Client(account_sid, auth_token)
        message = client.messages.create(
            body=f"{STOCK}:{up_down}{round(diff_percentage,0)}%\nHeadline:{article_headline}?\nBrief:{article_brief}",
-           from_="+12566022885",
-           to= "+919618411774",
+           from_="your Twilio account number",
+           to= "your verified number",
        )
        print(message.status)
 
 
 
-
+##why I written step1,2,3 etc... to make you understand how I have broken code to acheive output
 ## STEP 2: Use https://newsapi.org
 #https://newsapi.org/v2/everything?q=tesla&from=2025-03-25&sortBy=publishedAt&apiKey=247c928cb87e44aba9290219a65e4e57
 # Instead of printing ("Get News"), actually get the first 3 news pieces for the COMPANY_NAME. 
